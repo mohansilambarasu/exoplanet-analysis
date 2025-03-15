@@ -1,6 +1,8 @@
 import React from "react";
 import content from "../content";
 import { useDarkMode } from "../context/DarkModeContext";
+import homeDesktop from "../assets/home_desktop.png";
+import homeTab from "../assets/home_tab.png";
 
 const Home = () => {
   const { darkMode } = useDarkMode(); // Get dark mode state
@@ -23,8 +25,8 @@ const Home = () => {
         {content.author} - {content.date}
       </p>
 
-      <img src="src/assets/home_desktop.png" className="hidden md:block" />
-      <img src="src/assets/home_tab.png" className="md:hidden" />
+      <img src={homeDesktop} className="hidden md:block" />
+      <img src={homeTab} className="md:hidden" />
 
       <p className="mt-6 text-lg">{content.abstract.text}</p>
     </section>

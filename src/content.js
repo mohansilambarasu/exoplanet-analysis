@@ -1,5 +1,7 @@
 import { steps } from "framer-motion";
 import { text, title } from "framer-motion/client";
+import sqlAnalysis from "./assets/sql_analysis.png";
+import awsIntegration from "./assets/aws_integration.png";
 
 const content = {
   title: "Exploring the Evolution and Characteristics of Exoplanets",
@@ -67,7 +69,7 @@ const content = {
         "Finding the earliest discovered exoplanets: An SQL query identified the earliest discovered exoplanets, which were found in 1992. These planets, PSR B1257+12 c and PSR B1257+12 d, were detected using the Pulsar Timing method.",
         "Finding the latest discovered exoplanets: A SQL query was run to obtain the latest exoplanet discoveries. In 2024, 428 new exoplanets were discovered. The methods used in 2024 included Imaging, Radial Velocity, Transit, Microlensing, Pulsar Timing, and Transit Timing Variations.",
       ],
-      image: "src/assets/sql_analysis.png",
+      image: sqlAnalysis,
     },
     {
       title: "Exploratory Analysis and Visualization Using Python",
@@ -144,9 +146,9 @@ const content = {
       ],
       insights: [
         "2020 recorded the highest number of exoplanet discoveries, followed by 2024. The Transit method remains the dominant discovery method, detecting 32,942 exoplanets. Microlensing and Pulsar Timing methods are primarily used for detecting exoplanets at longer distances.",
-        "Average Distance of planets discovered in each discovery year: The below SQL query displays the average distance of planets discovered across each year. In the year 1992, 1994 the average distance is around 600 parsecs.",
+        "Count of Planets Discovered Each Year: The below SQL query displays the count of planets that are discovered over time period. It is evident that 2020 had most number of planets discovered which is followed by 2024.",
       ],
-      image: "src/assets/aws_integration.png",
+      image: awsIntegration,
     },
   ],
 
