@@ -53,7 +53,6 @@ export default function Section({
           </p>
         ))}
 
-      {/* ✅ Research Questions */}
       {questions && (
         <ul className="mt-4 list-disc list-inside text-lg font-semibold">
           {questions.map((question, index) => (
@@ -103,7 +102,6 @@ export default function Section({
         </div>
       )}
 
-      {/* Render Graphs if Available */}
       {graphs &&
         graphs.map((graph, index) => (
           <div key={index} className="mt-8">
@@ -121,7 +119,6 @@ export default function Section({
           </div>
         ))}
 
-      {/* ✅ Ensure children components are rendered if passed */}
       {children && <div className="mt-8">{children}</div>}
     </motion.section>
   );

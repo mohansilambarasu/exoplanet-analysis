@@ -6,6 +6,9 @@ import Section from "./components/Section";
 import DarkModeToggle from "./components/DarkModeToggle";
 import Loader from "./components/Loader";
 import content from "./content";
+import Contact from "./components/Contact";
+import ContactButton from "./components/ContactButton";
+import MobileNavbar from "./components/MobileNavbar";
 
 const App = () => {
   const { darkMode } = useDarkMode();
@@ -21,10 +24,20 @@ const App = () => {
   return (
     <div
       className={`min-h-screen transition-colors duration-300 ${
-        darkMode ? "dark bg-gray-900 text-white" : "bg-white text-black"
+        darkMode
+          ? "dark bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-800 text-white"
+          : "bg-white text-black"
       }`}
     >
-      <DarkModeToggle />
+      <div className="md:hidden">
+        <MobileNavbar />
+      </div>
+
+      <div className="hidden md:block">
+        <DarkModeToggle />
+        <ContactButton />
+      </div>
+
       <Home />
       <div className="border-t border-gray-300 dark:border-gray-600 my-6" />
       <Section title={content.about.title} text={content.about.insights} />
@@ -76,6 +89,8 @@ const App = () => {
           ))}
         </ul>
       </Section>
+
+      <Contact />
     </div>
   );
 };
