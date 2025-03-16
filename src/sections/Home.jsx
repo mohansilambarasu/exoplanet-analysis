@@ -54,8 +54,8 @@ const Home = () => {
 
       {/* Download Research Paper Button */}
       <motion.a
-        href="/exoplanet-analysis/assets/pdf/melangk_finalproject.pdf"
-        download="melangk_finalproject.pdf"
+        href="/exoplanet-analysis/assets/pdf/exoplanet_analysis.pdf"
+        download="exoplanet_analysis.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white dark:from-blue-700 dark:to-cyan-600 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
